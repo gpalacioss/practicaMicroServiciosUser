@@ -1,0 +1,29 @@
+server:
+  port: 8888
+  
+  
+  
+#==================================
+#Configuracion del data source
+#===================================
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/practicaMicroServiceUser?autoReconnect=true
+    username: root
+    password: Galletitas69/
+    tomcat:
+      max-active: 10
+      max-idle: 5
+      max-wait: 1
+        
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+      instance:
+      hostname: localhost
+      nonSecurePort: 8888
+      

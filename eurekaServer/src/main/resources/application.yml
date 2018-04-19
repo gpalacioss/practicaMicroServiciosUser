@@ -1,0 +1,19 @@
+server:
+  port: 1111
+  
+spring:
+  application:
+    name: eureka-server
+
+
+#===============================================
+## Configuracion para que se registre en eureka
+## como este es el server se le pone false para 
+## que no se registre a si misma
+#===============================================
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
