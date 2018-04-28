@@ -1,7 +1,11 @@
+#el archivo application contiene el puerto de la aplicacion y la coneccion con el eureka server
+
+#Puerto donde se desplegara la aplicacion
 server:
   port: 8686
   
-  
+
+#Configurcion de la coneccion con el eureka server
 eureka:
   client:
     service-url:
